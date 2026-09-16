@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070709" />
+    
+    <!-- SPA redirect decoder for GitHub Pages -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <title>SceneSwap — Step into the aesthetic of a scene</title>
+    <meta name="title" content="SceneSwap — Step into the aesthetic of a scene" />
+    <meta name="description" content="SceneSwap is an interactive cinematic visual-aesthetic discovery platform. Explore curated scenes, break down color palettes, typography, lighting, music vibes, interiors, and wardrobe, or remix aesthetics into new worlds." />
+    <meta name="keywords" content="cinematic aesthetics, color palette generator, film lighting, typography pairings, ambient soundscapes, aesthetic remixer, creative moodboard" />
+    <meta name="author" content="SceneSwap Studio" />
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jai1512-creator.github.io/sceneswap/" />
+    <meta property="og:title" content="SceneSwap — Step into the aesthetic of a scene" />
+    <meta property="og:description" content="Discover colors, cinematic lighting, soundscapes, wardrobe, and spaces from curated aesthetic worlds. Interactive breakdowns, ambient soundscapes, and aesthetic remixing." />
+    <meta property="og:image" content="https://jai1512-creator.github.io/sceneswap/og-preview.png" />
+    <meta property="og:image:secure_url" content="https://jai1512-creator.github.io/sceneswap/og-preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:image:alt" content="SceneSwap — Step into the aesthetic of a scene" />
+    <meta property="og:site_name" content="SceneSwap" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://jai1512-creator.github.io/sceneswap/" />
+    <meta name="twitter:title" content="SceneSwap — Step into the aesthetic of a scene" />
+    <meta name="twitter:description" content="Discover colors, cinematic lighting, soundscapes, wardrobe, and spaces from curated aesthetic worlds. Interactive breakdowns, ambient soundscapes, and aesthetic remixing." />
+    <meta name="twitter:image" content="https://jai1512-creator.github.io/sceneswap/og-preview.png" />
+    <meta name="twitter:image:alt" content="SceneSwap — Step into the aesthetic of a scene" />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-cinema-950 text-cinema-100 font-sans antialiased selection:bg-cinema-gold/20 selection:text-cinema-gold overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
